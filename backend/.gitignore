@@ -1,0 +1,20 @@
+# Django-specific files
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# Database files (e.g., SQLite)
+db.sqlite3
+
+# Virtual Environment directories
+venv/
+
+
+# IDE-specific files and directories
+.idea/
+.vscode/
+
+
+
