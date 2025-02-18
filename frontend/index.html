@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation Maker</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="container">
+            <div class="logo">WeddingInvite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#whyus">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Create Beautiful Wedding Invitations</h1>
+                    <p>Simplify your task with our easy-to-use invitation maker</p>
+                    <button class="btn btn-primary get-started-btn">Get Started</button>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/title.png" alt="Wedding Image" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <div class="signup-container" id="signup-form">
+    <div class="left-container">
+      <h1>
+        <i class="fas fa-paw"></i> Wedding Invitation
+      </h1>
+      <div class="bride">
+        <img src="assets/wedding.png" alt="Image">
+      </div>
+    </div>
+    <div class="right-container">
+      <header>
+        <h1>Create your wedding card with simple steps!</h1>
+      </header>
+      <div class="form-container">
+        <form id="wedding-form">
+          <div class="row">
+            <div class="bride-name">
+              <label for="brides-name">Bride's Name</label>
+              <input id="brides-name" type="text" placeholder="Enter Bride's name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="groom-name">
+              <label for="groom-name">Groom's Name</label>
+              <input id="groom-name" type="text" placeholder="Enter Groom's name" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="wedding-date">
+              <label for="wedding-date">Wedding Date</label>
+              <input id="wedding-date" type="date" required>
+            </div>
+            <div class="wedding-time">
+              <label for="wedding-time">Wedding Time</label>
+              <input id="wedding-time" type="time" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="venue-location">
+              <label for="venue-location">Venue (Google Location)</label>
+              <input id="venue-location" type="text" placeholder="Enter exact Google location" required>
+            </div>
+          </div>
+          <footer>
+            <div class="set">
+              <button type="submit" id="next">Next</button>
+            </div>
+          </footer>
+        </form>
+      </div>
+    </div>
+  </div>
+   <section id="whyus" class="whyus-container">
+            <div class="container">
+                <h2>Why Choose Us?</h2>
+                <div class="whyus-items">
+                    <div class="whyus-item">
+                        <i class="fas fa-download"></i>
+                        <h3>Download</h3>
+                        <p>Get a digital copy of your invitation by downloading it to your device.</p>
+                    </div>
+                    <div class="whyus-item">
+                        <i class="fas fa-print"></i>
+                        <h3>Print</h3>
+                        <p>Download a high-quality PDF and print at home, or let us do the printing!</p>
+                    </div>
+                    <div class="whyus-item">
+                        <i class="fas fa-share-alt"></i>
+                        <h3>Share</h3>
+                        <p>Spread the word on social media, by text message, or email to friends and family.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-container">
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>We're here to help and answer any questions you might have. We look forward to hearing from you!</p>
+                    <p><strong>Address:</strong> Kalimati, Kathmandu</p>
+                    <p><strong>Phone:</strong> <a href="tel:+4571997707">+45 71997707</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@weddinginvite.com">info@weddinginvite.com</a></p>
+                </div>
+                <div class="contact-image">
+                    <img src="assets/bye.png" alt="Contact Image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Wedding Invitation Maker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

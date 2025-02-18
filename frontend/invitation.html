@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/invitation.css">
+</head>
+<body>
+    
+    <img src="assets/right.png" alt="" class="sakura-corner top-right">
+    <img src="assets/left.png" alt="" class="sakura-corner top-left">
+
+    <div class="container">
+        <div class="names">
+            <h1 id="bride-name"></h1>
+            <div class="and">&</div>
+            <h1 id="groom-name"></h1>
+        </div>
+
+        <div class="getting-married">ARE GETTING MARRIED</div>
+        
+        <div class="wedding-details" id="wedding-details"></div>
+
+        <div class="blessing">
+            Bless the married couple for happy life!
+        </div>
+
+        <div class="dinner-text">
+            dinner & dancing to follow
+        </div>
+
+        <div class="buttons">
+            <button class="button primary" id="venue-button">SEE THE VENUE</button>
+            <button class="button secondary" onclick="downloadCard()">DOWNLOAD INVITATION CARD</button>
+        </div>
+
+        <div class="contact-info">
+            Can't wait to celebrate auspicious moment of our family with you!<br>
+            Just a ping away for any queries: +91 8210050514
+        </div>
+
+        <div class="social-share">
+            <h4>Join us in our happiness!</h4>
+            <button class="twitter-button" onclick="shareOnTwitter()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="JS/invitation.js"></script>
+</body>
+</html>

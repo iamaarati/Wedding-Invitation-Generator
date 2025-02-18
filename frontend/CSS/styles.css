@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+html{
+      scroll-behavior:smooth;
+      overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #fce7f3 0%, #ede9fe 100%);
+    align-items: center;
+    justify-items: center;
+    min-width: 300px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ec4899;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ec4899;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0 50px;
+    background: linear-gradient(135deg, #fce7f3 0%, #ede9fe 100%);
+}
+
+.hero .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ec4899;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #d61f69;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    position: right;
+}
+
+/* Signup Container (Unchanged) */
+.signup-container {
+  display: grid;
+  grid-template-areas: "left right";
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 80px auto; /* Changed: Added auto for horizontal centering */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-container {
+  background: #807182;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+.left-container h1 {
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-size: 24px;
+}
+.left-container h1 i {
+  background: #f7b1ab;
+  border-radius: 50%;
+  color: #807182;
+  font-size: 24px;
+  margin-right: 5px;
+  padding: 10px;
+  transform: rotate(-45deg);
+}
+.left-container .bride img {
+  filter: sepia(100%);
+  width: 80%;
+  margin-top: 20px;
+}
+
+.right-container {
+  background: #f9c7c2;
+  display: grid;
+  grid-template-areas: "." ".";
+  justify-content: center;
+  width: 600px;
+  padding: 20px;
+}
+.right-container h1:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.right-container .form-container .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.right-container .form-container .row .bride-name,
+.right-container .form-container .row .groom-name,
+.right-container .form-container .row .wedding-date,
+.right-container .form-container .row .wedding-time,
+.right-container .form-container .row .venue-location {
+  flex: 1;
+  margin-right: 10px;
+}
+.right-container .form-container .row .bride-name label,
+.right-container .form-container .row .groom-name label,
+.right-container .form-container .row .wedding-date label,
+.right-container .form-container .row .wedding-time label,
+.right-container .form-container .row .venue-location label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.right-container .form-container .row .bride-name input,
+.right-container .form-container .row .groom-name input,
+.right-container .form-container .row .wedding-date input,
+.right-container .form-container .row .wedding-time input,
+.right-container .form-container .row .venue-location input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+}
+.right-container .form-container .row .brides-photo,
+.right-container .form-container .row .groom-photo {
+  display: flex;
+  align-items: center;
+}
+.right-container .form-container .row .brides-photo button,
+.right-container .form-container .row .groom-photo button {
+  background: #807182;
+  border: none;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.right-container .form-container .row .brides-photo button i,
+.right-container .form-container .row .groom-photo button i {
+  color: #fff;
+  font-size: 16px;
+}
+.right-container .form-container .row .brides-photo label,
+.right-container .form-container .row .groom-photo label {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+}
+.right-container footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.right-container footer button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 38px;
+  line-height: 38px;
+  width: 100px;
+  border-radius: 19px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.right-container footer button#next {
+  background: #807182;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.right-container footer button#next:hover {
+  background: #171a2b;
+}
+
+/* Why Us Section */
+.whyus-container {
+    padding: 80px 0;
+    background-color: #fff;
+    background: linear-gradient(135deg, #fce7f3 0%, #ede9fe 100%);
+}
+
+.whyus-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.whyus-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.whyus-item {
+    flex-basis: calc(33.333% - 2rem);
+    text-align: center;
+    padding: 2rem;
+    background-color: #fdf2f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.whyus-item:hover {
+    transform: translateY(-5px);
+}
+
+.whyus-item i {
+    font-size: 3rem;
+    color: #ec4899;
+    margin-bottom: 1rem;
+}
+
+.whyus-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.whyus-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Contact Section */
+.contact-container {
+    padding: 80px 0;
+    background-color: #fdf2f8;
+    text-align: center; /* Added: Center align all text in contact section */
+}
+
+.contact-container .container {
+    display: flex;
+    flex-direction: column; /* Changed: Stack items vertically */
+    align-items: center; /* Added: Center items horizontally */
+    justify-content: center; /* Added: Center items vertically */
+}
+
+.contact-info {
+    max-width: 500px;
+    margin-bottom: 2rem; /* Added: Space between text and image */
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.contact-info a {
+    color: #ec4899;
+    text-decoration: none;
+}
+
+.contact-image {
+    text-align: right; /* Changed: Center the image */
+}
+
+.contact-image img {
+    max-width: 15%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .hero .container,
+    .contact-container .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header .container {
+      flex-direction: column;
+  }
+
+  .nav-links {
+      margin-top: 1rem;
+  }
+
+  .nav-links li {
+      margin: 0 1rem;
+  }
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+}
+    .hero-content,
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+    .hero-content, .hero-image {
+      margin-bottom: 2rem;
+  }
+  .hero-img {
+    max-width: 80%; /* Smaller image size */
+}
+    .whyus-item {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .contact-image img {
+      max-width: 20%;
+  }
+  /* Reduce Form Size */
+  .signup-container {
+    max-width: 90%; /* Make the form take up less width */
+    margin: 40px auto; /* Reduce margin */
+    padding: 15px; /* Reduce padding */
+}
+
+.left-container {
+    width: 250px; /* Reduce left container width */
+    padding: 20px 0 0 0; /* Reduce padding */
+}
+
+.right-container {
+    width: 100%; /* Make right container take full width */
+    padding: 15px; /* Reduce padding */
+}
+
+.right-container h1:nth-of-type(1) {
+    font-size: 24px; /* Smaller font size for form title */
+    margin-bottom: 15px; /* Reduce margin */
+}
+
+.right-container .form-container .row {
+    margin-bottom: 10px; /* Reduce margin between rows */
+}
+
+.right-container .form-container .row input {
+    padding: 6px; /* Reduce input padding */
+    font-size: 14px; /* Smaller font size for inputs */
+}
+
+.right-container footer button {
+    height: 32px; /* Smaller button height */
+    width: 90px; /* Smaller button width */
+    font-size: 14px; /* Smaller font size for buttons */
+}
+}
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 1.8rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+  .hero-img {
+    max-width: 70%; /* Even smaller image size */
+}
+
+  .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+  }
+
+  .whyus-container h2, .contact-info h2 {
+      font-size: 1.5rem;
+  }
+
+  .contact-image img {
+      max-width: 50%;
+  }
+
+  /* Further Reduce Form Size */
+  .signup-container {
+   /* max-width: 90%; /* Make the form take up even less width */
+    margin: 20px auto; /* Further reduce margin */
+    padding: 10px; /* Further reduce padding */
+}
+
+.left-container {
+    width: 200px; /* Further reduce left container width */
+    padding: 15px 0 0 0; /* Further reduce padding */
+}
+
+.right-container h1:nth-of-type(1) {
+    font-size: 20px; /* Even smaller font size for form title */
+    margin-bottom: 10px; /* Further reduce margin */
+}
+
+.right-container .form-container .row input {
+    padding: 5px; /* Further reduce input padding */
+    font-size: 12px; /* Even smaller font size for inputs */
+}
+
+.right-container footer button {
+    height: 28px; /* Even smaller button height */
+    width: 80px; /* Even smaller button width */
+    font-size: 12px; /* Even smaller font size for buttons */
+}
+}
